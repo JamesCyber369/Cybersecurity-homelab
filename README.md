@@ -3,7 +3,7 @@
 > **A real-world journey of career transition from Electrical Work into IT & Cybersecurity — documented from day one.**
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Phase](https://img.shields.io/badge/Current%20Phase-Vulnerability%20Scanning%20Complete-blue)]()
+[![Phase](https://img.shields.io/badge/Current%20Phase-Suricata%20IDS%20Complete-blue)]()
 [![Goal](https://img.shields.io/badge/Goal-Cloud%20%26%20AI%20Security-purple)]()
 
 ---
@@ -41,11 +41,11 @@ This repository documents every step of that journey — from receiving unknown 
 | [04](./04-proxmox-cluster/) | Proxmox Configuration & First VM | ✅ Complete |
 | [05](./05-pfsense-firewall/) | Firewall Deployment — OPNsense | 🔄 In Progress |
 | [06](./06-wazuh-siem/) | SIEM Deployment — Wazuh | ✅ Complete |
-| [07](./07-kubernetes/) | Kubernetes Cluster | ✅ Complete |
-| [08](./08-openstack-cloud/) | Private Cloud — OpenStack | ⏭️ Skipped (resource constraints) |
-| [09](./09-vulnerability-scanning/) | Vulnerability Scanning | ✅ Complete |
-| [10](./10-honeypot/) | Honeypot Deployment | 📋 Planned |
-| [11](./11-suricata-ids/) | IDS/IPS — Suricata | 📋 Planned |
+| [07](./07-kubernetes/) | Kubernetes Cluster — K3s | ✅ Complete |
+| [08](./08-openstack-cloud/) | Private Cloud — OpenStack | ⏭️ Skipped |
+| [09](./09-vulnerability-scanning/) | Vulnerability Scanning — Nmap | ✅ Complete |
+| [10](./10-honeypot/) | Honeypot Deployment — Cowrie | ✅ Complete |
+| [11](./11-suricata-ids/) | IDS/IPS — Suricata | ✅ Complete |
 | [12](./12-terraform-ansible/) | Infrastructure as Code | 📋 Planned |
 | [13](./13-ai-llm-security/) | AI/LLM Security Lab | 📋 Planned |
 | [14](./14-mlsecops-pipeline/) | MLSecOps Pipeline | 📋 Planned |
@@ -101,9 +101,11 @@ This repository documents every step of that journey — from receiving unknown 
 | 2026-06-27 | Network segmentation implemented — internal bridge created |
 | 2026-07-01 | Wazuh SIEM deployed — Ubuntu agent connected — Phase 06 complete |
 | 2026-07-17 | K3s Kubernetes cluster deployed — Phase 07 complete |
-| 2026-07-17 | Network vulnerability scan performed — 24 hosts discovered — Phase 09 complete |
+| 2026-07-17 | Nmap network scan — 24 hosts discovered — Phase 09 complete |
+| 2026-07-17 | Cowrie SSH honeypot deployed and tested — Phase 10 complete |
+| 2026-07-18 | Suricata IDS deployed with Emerging Threats ruleset — Phase 11 complete |
 | TBD | OPNsense NAT/routing issue resolved — Phase 05 complete |
-| TBD | Honeypot deployment |
+| TBD | Infrastructure as Code — Terraform/Ansible |
 
 ---
 
