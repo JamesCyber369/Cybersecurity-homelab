@@ -9,6 +9,7 @@ This folder documents real-world attack simulations performed in the home lab en
 | # | Scenario | MITRE Technique | Severity | Status |
 |---|---|---|---|---|
 | [001](./001-ssh-brute-force/) | SSH Brute Force Attack Detection | T1110 — Brute Force | High | ✅ Complete |
+| [002](./002-privilege-escalation/) | Privilege Escalation Monitoring | T1548 — Abuse Elevation Control | Medium | ✅ Complete |
 
 ---
 
