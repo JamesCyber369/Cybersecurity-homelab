@@ -1,20 +1,20 @@
-# 🖥️ From Electrician to IT: Building a Cybersecurity Home Lab from Scratch
+# 🖥️ Cybersecurity GRC Meets Systems Engineering | Enterprise Home Lab
 
-> **A real-world journey of career transition from Electrical Work into IT & Cybersecurity — documented from day one.**
+> **Building real infrastructure to connect security governance, technical implementation, and operational risk.**
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 [![Phase](https://img.shields.io/badge/Current%20Phase-Suricata%20IDS%20Complete-blue)]()
-[![Goal](https://img.shields.io/badge/Goal-Cloud%20%26%20AI%20Security-purple)]()
+[![Goal](https://img.shields.io/badge/Goal-GRC%20%2B%20Systems%20Engineering-purple)]()
 
 ---
 
 ## 👤 About Me
 
-I am transitioning from a career in **electrical work** into **IT and Cybersecurity**, with a focus on **Cloud Security** and **AI Security**. Rather than just studying theory, I chose to get hands-on — acquiring real enterprise server hardware and building a functional home lab completely from scratch.
+I'm a **Cybersecurity Governance, Risk, and Compliance (GRC) professional** with experience in NIST RMF, security control assessments, and federal security compliance. I'm expanding my hands-on understanding of systems engineering so I can better evaluate how security controls work in practice — including the infrastructure dependencies, technical constraints, and operational tradeoffs engineers encounter.
 
-This repository documents every step of that journey — from receiving unknown hardware with no documentation, physically inspecting and identifying every component, sourcing missing parts, setting up networking, installing a hypervisor, and ultimately building a full enterprise-grade security lab.
+This repository documents my enterprise-style home lab, built from physical Supermicro servers through virtualization, network security, centralized monitoring, identity management, and attack simulations. My goal isn't simply to check whether a control exists; it's to understand **how to implement, validate, troubleshoot, and improve that control without losing sight of system availability and mission needs**.
 
-> Coming from electrical work gave me a strong foundation in physical infrastructure, systems thinking, and troubleshooting — skills that translate directly into IT.
+**Follow the journey as I bridge GRC and systems engineering — from server to user, and from network boundaries to security monitoring.**
 
 ---
 
@@ -24,9 +24,9 @@ This repository documents every step of that journey — from receiving unknown 
 - Learn hardware identification, inspection, and documentation
 - Configure server networking and remote management via IPMI
 - Deploy and manage operating systems on bare metal
-- Build cloud infrastructure skills using Proxmox
+- Develop systems engineering and hybrid infrastructure fundamentals using Proxmox, Windows Server, and Linux
 - Practice cybersecurity with SIEM, IDS/IPS, and vulnerability scanning
-- Develop AI/LLM security skills on real deployed models
+- Connect NIST RMF and security control objectives to practical engineering constraints and evidence
 - Document everything as a professional portfolio — including real troubleshooting, not just a finished result
 
 ---
@@ -52,6 +52,29 @@ This repository documents every step of that journey — from receiving unknown 
 
 ---
 
+## 🧩 Additional Implemented Skills
+
+These completed exercises extend the original numbered phases:
+
+| Area | Documented Work | Status |
+|---|---|---|
+| [Windows Server & Active Directory](./additional-skills/windows-server-active-directory/) | Windows Server 2022 domain controller, AD DS, domain users, OUs, security groups, and DNS | ✅ Complete |
+| [OPNsense WireGuard VPN](./additional-skills/opnsense-wireguard-vpn/) | VPN instance, Windows client, split tunneling, and routing troubleshooting | ✅ Complete |
+| [Wireshark & Packet Capture](./additional-skills/wireshark-packet-capture/) | tcpdump/tshark capture, SCP transfer, protocol filtering, and traffic analysis | ✅ Complete |
+
+**Group Policy:** An area of continued development; the Active Directory documentation establishes the domain and accounts, but does not yet document a completed GPO deployment.
+
+## 🎯 Security Detection & Response Scenarios
+
+| Scenario | Technique | Status |
+|---|---|---|
+| [SSH Brute Force Detection](./scenarios/001-ssh-brute-force/) | MITRE ATT&CK T1110 | ✅ Complete |
+| [Privilege Escalation Monitoring](./scenarios/002-privilege-escalation/) | MITRE ATT&CK T1548 | ✅ Complete |
+
+See the [scenario index](./scenarios/) for detection, analysis, response, and hardening notes.
+
+---
+
 ## 🖥️ Lab Hardware
 
 ### Current Active Setup
@@ -73,10 +96,18 @@ This repository documents every step of that journey — from receiving unknown 
 
 ---
 
-## 🔄 The Electrical → IT Connection
+## 🔐 Why This Matters for GRC & Security Engineering
 
-| Electrical Concept | IT Equivalent |
+| Engineering Area | Security and Risk Connection |
 |---|---|
+| Active Directory, users, and groups | Least privilege, access governance, and account management |
+| Domain controllers and DNS | Identity dependencies, secure configuration, and service availability |
+| OPNsense, network segmentation, and WireGuard | Boundary protection, remote access, and traffic-flow constraints |
+| Proxmox VMs and Linux/Windows servers | Configuration baselines, patching, and infrastructure hardening |
+| Wazuh, Suricata, and packet analysis | Continuous monitoring, event detection, and validating safeguards |
+| Attack simulations and remediation | Control effectiveness, incident analysis, and evidence-driven risk decisions |
+
+---|---|
 | Circuit breakers | Firewalls |
 | Cable runs & conduit | Network infrastructure |
 | Power distribution panels | Server power management |
@@ -109,4 +140,4 @@ This repository documents every step of that journey — from receiving unknown 
 
 ---
 
-*"The best way to learn is to build."* ⚡
+*"To assess a control well, understand the system it protects."*
